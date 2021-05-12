@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "609b5aa0375493347411c2dd"
+  },
+  "body": "The food was really delicious.\r\nIt was filling and we really enjoyed having it",
+  "rating": 5,
+  "author": {
+    "$oid": "60965261a13dd552109e421d"
+  },
+  "dish": {
+    "$oid": "60965261a13dd552109e421c"
+  },
+  "createdAt": {
+    "$date": "2021-05-12T04:33:36.027Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T04:33:36.027Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "60965261a13dd552109e421d"
+  },
+  "fullname": "",
+  "email": "",
+  "image": "person.jpg",
+  "phoneno": 9999999999,
+  "password": "secret",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e421e"
+  },
+  "fullname": "",
+  "email": "",
+  "image": "person.jpg",
+  "phoneno": 9999999998,
+  "password": "secret",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e421f"
+  },
+  "fullname": "",
+  "email": "",
+  "image": "person.jpg",
+  "phoneno": 9999999997,
+  "password": "secret",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609abc15a5a78047d04a3154"
+  },
+  "fullname": "",
+  "email": "",
+  "image": "person.jpg",
+  "phoneno": 9999999989,
+  "password": "secret",
+  "__v": 0
+}]
