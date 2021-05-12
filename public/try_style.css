@@ -1,0 +1,17 @@
+.part1{
+    border: 5px solid red;
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+.part2{
+    position: absolute;
+    top: 0;
+    border: 5px solid orange;
+    height: 100%;
+    width: 100%;
+    padding-left: 170px;
+    padding-right: 170px;
+}
