@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/P4_style.css">
+    <title>Dish</title>
+</head>
+<body>
+    
+    <% 
+    if(userId){
+    %>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img class="" src="/images/Logo.png" alt="" width="52" height="52">
+          <span class="title">Restaurant</span>
+        </a>
+        <form class="d-flex" method="POST" action="/logout">
+          <button class="btn btn-dark nav-link ms-3 logout">Logout</button>
+        </form>
+      </div>
+    </nav>
+
+    <% 
+    }
+    else{
+      %>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">
+          <img class="" src="/images/Logo.png" alt="" width="52" height="52">
+          <span class="title">Restaurant</span>
+        </a>
+        <form class="d-flex">
+          <a class="ms-3 nav-link logout" href="javascript:poplogin()">Login</a>
+          <a class="nav-link logout" href="javascript:popsignup()">Sign Up</a>
+        </form>
+      </div>
+    </nav>
+
+    <% } %>
+
+    <% 
+    if(error) { 
+      errorshow();
+      %>
+
+    <div class="error">
+      <%= error %>
+    </div>
+
+    <% } %>
+
+    <div class="pop">
+
+        <div class="signupform">
+            <div class="form-group mb-4">
+              <h3 class="signup-inline">Signup</h3>
+              <img class="img signup-inline" src="/images/close_black.png" alt="" onclick="closewindow()">
+            </div>
+            <form method="POST" action="/menu/<%= dish.category %>/<%= dish.name %>">
+              <div class="form-group mb-2">
+                <label for="registernum">Phone Number</label>
+                <input name="registernum" type="tel" pattern="[0-9]{10-12}" minlength="10" maxlength="12" class="form-control" required>
+              </div>
+              <div class="form-group mb-2">
+                <label for="registerpass">Password</label>
+                <input name="registerpass" type="password" class="form-control" required>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="terms" class="me-2" required>
+                <label for="terms" id="size-sm">I agree to the following: Privacy Policy and Terms of Service</label>
+              </div>
+              <button name="register" class="btn btn-primary w-100 mt-3">Signup</button>
+            </form>
+            <hr>
+            <p>Already have an account? <a href="javascript:closewindow();poplogin();">Login</a></p>
+        </div>
+  
+        <div class="loginform">
+            <div class="form-group mb-4">
+              <h3 class="signup-inline">Login</h3>
+              <img class="img signup-inline" src="/images/close_black.png" alt="" onclick="closewindow()">
+            </div>
+            <form method="POST" action="/menu/<%= dish.category %>/<%= dish.name %>">
+              <div class="form-group mb-2">
+                <label for="loginnum">Phone Number</label>
+                <input name="loginnum" type="tel" pattern="[0-9]{10-12}" minlength="10" maxlength="12" class="form-control" required>
+              </div>
+              <div class="form-group mb-2">
+                <label for="loginpass">Password</label>
+                <input name="loginpass" type="password" class="form-control" required>
+              </div>
+              <button name="login" class="btn btn-primary w-100 mt-3">Login</button>
+            </form>
+            <hr>
+            <p>New to Restaurant? <a href="javascript:closewindow();popsignup();">Create account</a></p>
+        </div>
+  
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+
+            <div class="header">
+                <img id="head-img" src="/images/<%= dish.image %>" alt="">
+                <div id="head-body">
+                    <h4><%= dish.name %></h4>
+                    <p>Description and Composition:</p>
+                    <ul>
+                        <li><%= dish.descr %></li>
+                        <li>Price: <%= dish.price %></li>
+                    </ul>
+                </div> 
+            </div>
+
+            <% comments.forEach(comment => { %>
+
+            <div class="comment-box">
+                <h6><%= comment.author.phoneno %><span>   <%= comment.createdAt %></span></h6>
+                <p><%= comment.body %></p>
+                <div>
+                    <img src="" alt="">Upvote
+                    <img src="" alt="">Downvote
+                </div>
+            </div>
+
+            <% }) %>
+
+            <% 
+              if(userId) {
+                %>
+
+            <div class="comment">
+              <form method="POST" action="/menu/<%= dish.category %>/<%= dish.name %>">
+                <textarea name="comment_body" class="form-control" maxlength="240" placeholder="Comment Here" required></textarea>
+                <label for="comment_rating">Rating</label>
+                <select name="comment_rating" class="form-select">
+                  <option value="5" selected>5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                </select>
+                <button name="comment" class="btn btn-secondary">Comment</button>
+              </form>
+            </div> 
+
+            <% } %>
+
+            <!-- <div class="comment-box">
+                <h6>User Name <span>date time</span></h6>
+                <p>Comment</p>
+                <div>
+                    <img src="" alt="">Upvote
+                    <img src="" alt="">Downvote
+                </div>
+            </div>
+
+            <div class="comment-box">
+                <h6>User Name <span>date time</span></h6>
+                <p>Comment</p>
+                <div>
+                    <img src="" alt="">Upvote
+                    <img src="" alt="">Downvote
+                </div>
+            </div>
+
+            <div class="comment-box">
+                <h6>User Name <span>date time</span></h6>
+                <p>Comment</p>
+                <div>
+                    <img src="" alt="">Upvote
+                    <img src="" alt="">Downvote
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="right">
+            <h2>Offers Image</h2>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <div class="left-foot">
+            <p>Contact Us</p>
+            <p>Locations</p>
+            <p>About Us</p>
+        </div>
+        <div class='right-foot'>
+          <img src="/images/androidAppImg.png" alt="" width="160" height="105">
+          <img src="/images/iosAppImg.png" alt="" width="160" height="105">
+        </div>
+    </div>
+
+    <script src="/script/P4_script.js"></script>
+</body>
+</html>
