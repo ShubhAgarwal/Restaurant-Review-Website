@@ -1,0 +1,201 @@
+[{
+  "_id": {
+    "$oid": "60965261a13dd552109e4209"
+  },
+  "image": "samosa.jpg",
+  "name": "Samosa",
+  "category": "Snacks",
+  "price": 16,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e420a"
+  },
+  "image": "default.jpg",
+  "name": "Veg. Patties",
+  "category": "Snacks",
+  "price": 24,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e420b"
+  },
+  "image": "default.jpg",
+  "name": "Dal Kachori + Aloo Sabji",
+  "category": "Snacks",
+  "price": 60,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e420c"
+  },
+  "image": "dhokla.jpg",
+  "name": "Dhokla",
+  "category": "Snacks",
+  "price": 40,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e420d"
+  },
+  "image": "default.jpg",
+  "name": "Mix Veg.",
+  "category": "North Indian and Main Course",
+  "price": 230,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e420e"
+  },
+  "image": "dal_makhani.jpg",
+  "name": "Dal Makhani",
+  "category": "North Indian and Main Course",
+  "price": 280,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e420f"
+  },
+  "image": "shahi_paneer.jpg",
+  "name": "Shahi Paneer",
+  "category": "North Indian and Main Course",
+  "price": 320,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4210"
+  },
+  "image": "default.jpg",
+  "name": "Tandoori Roti",
+  "category": "Breads",
+  "price": 15,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4211"
+  },
+  "image": "default.jpg",
+  "name": "Onion Kulcha",
+  "category": "Breads",
+  "price": 50,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4212"
+  },
+  "image": "plain_naan.jpg",
+  "name": "Plain Naan",
+  "category": "Breads",
+  "price": 50,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4213"
+  },
+  "image": "default.jpg",
+  "name": "Stuffed Paneer Naan",
+  "category": "Breads",
+  "price": 70,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4214"
+  },
+  "image": "default.jpg",
+  "name": "Steamed Rice",
+  "category": "Rice and Noodles",
+  "price": 130,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4215"
+  },
+  "image": "default.jpg",
+  "name": "Jeera Rice",
+  "category": "Rice and Noodles",
+  "price": 150,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4216"
+  },
+  "image": "veg_biryani.jpg",
+  "name": "Veg. Biryani",
+  "category": "Rice and Noodles",
+  "price": 195,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4217"
+  },
+  "image": "veg_fried_rice.jpg",
+  "name": "Veg. Fried Rice",
+  "category": "Rice and Noodles",
+  "price": 150,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4218"
+  },
+  "image": "default.jpg",
+  "name": "Garlic Chilli Noodles",
+  "category": "Rice and Noodles",
+  "price": 160,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e4219"
+  },
+  "image": "default.jpg",
+  "name": "Hakka Noodles",
+  "category": "Rice and Noodles",
+  "price": 180,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e421a"
+  },
+  "image": "masala_dosa.jpg",
+  "name": "Masala Dosa",
+  "category": "South Indian",
+  "price": 140,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e421b"
+  },
+  "image": "veg_manchurian.jpg",
+  "name": "Veg. Manchurian",
+  "category": "Chinese",
+  "price": 195,
+  "descr": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60965261a13dd552109e421c"
+  },
+  "image": "honey_chilli_potato.jpg",
+  "name": "Honey Chilli Potato",
+  "category": "Chinese",
+  "price": 180,
+  "descr": "",
+  "__v": 0
+}]
